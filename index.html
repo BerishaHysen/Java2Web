@@ -6,79 +6,143 @@
       </title>
    </head>
 
-   <body style="background-color:cornflowerblue;">
+   <body style="background-color: lightblue;">
       
-         <header>
-            <img src="../Ubtlogo.png"  style="width: 100px; height: 100px;" alt="Logo e Ubt-se"/>
-            <p style="display: inline;">Home</p>
-            <p style="display: inline;">About</p>
-            <p style="display: inline;">Contact Us</p>
-         </header>
+         <!-- Header -->
+      <header>
+         <img src="../Ubtlogo.png"  style="width: 100px; height: 100px;" alt="Logo e Ubt-se"/>
+         <p style="display: inline; padding-left:30px;">Home</p>
+         <p style="display: inline;">About</p>
+         <p style="display: inline;">Contact Us</p>
+      </header>
 
+         <!-- Main -->
+      <main>
 
-         <main>
-            <ol>
-               <li>Lajme</li>
-               <li>Teknologji</li>
-               <li>Sport</li>
-               <li>Shendetesi</li>
-               <li>Pune</li>
-               <li>Informacione</li>
-               <li>Extra</li>
-            </ol>
+            
+            
+            <!-- Pjesa 1 -->
+         <ol>
+            <li>Lajme</li>
+            <li>Teknologji</li>
+            <li>Sport</li>
+            <li>Shendetesi</li>
+            <li>Pune</li>
+            <li>Informacione</li>
+            <li>Extra</li>
+         </ol>
             
 
-            <div class="regjistrimi">
-               <h3>Regjistrohu ne faqen tone</h3>
-
-               <form action="" method="" name="">
-                  <label for="">emri</label>
-                  <input type="text" id="inputName"> </input>
-                  <br/>
-                  <label for="">Mbiemri</label>
-                  <input type="text" > </input>
-                  <br/>
-                  <label for="">Email</label>
-                  <input type="email" > </input>
-                  <br/>
-                  <label for="">Mosha</label>
-                  <input type="number" > </input>
-                  <br/>
-                  <label for="">DiteLindja</label>
-                  <input type="date" > </input>
-                  <br>
-                  <label for="male">Male</label>
-                  <input type="radio" name="gender" id="male" />
-                  
-                  <label for="female">Female</label>
-                  <input type="radio" name="gender" id="female" />
-                  <br>
-                  <label for="female">Female</label>
-                  <input type="radio" name="gender" id="female" />
-               </form>
-            </div>
-
-            <div class="orari">
-
-               <table>
-                  <header>
-
-                  </header>
-               </table>
-               <div class="lendet">
-
-               </div>
-
-
+               <!-- Regjistrimi -->
+         <h3>Regjistrohu ne faqen tone</h3>
+         <fieldset style="border: 1px solid black;">
+            <legend>Regjistrimi</legend>
                
-            </div>
+            <form action="" method="" name="">
+               <label for="">Emri</label>
+               <input type="text" id="inputName">pranon tekst cfaredo lloji</input>
+               <br/>
+               <label for="">Mbiemri</label>
+               <input type="text" >pranon tekst cfaredo lloji</input>
+               <br/>
+               <label for="">Email</label>
+               <input type="email" >pranon vetem email</input>
+               <br/>
+               <label for="">Mosha</label>
+               <input type="number" >pranon vetem numer</input>
+               <br/>
+               <label for="">DiteLindja</label>
+               <input type="date">pranon vetem date</input>
+               <br>
+               <label for="male">
+                  <input type="radio" name="gender" id="male" />Male
+               </label>
+               <label for="female">
+                  <input type="radio" name="gender" id="female" />Female
+               </label>
+               <br>
+               <label for="female">
+                  <input type="radio" name="gender" id="female" />Female
+               </label>
+               <br/>
+               <select for="qytetet">
+                  <option value="Prishtine">Prishtine</option>
+                  <option value="Prizren">Prizren</option>
+                  <option value="Peje">Peje</option>
+               </select>
+            </form>
+         </fieldset>
 
+         <br/>
+            
+         <fieldset>
+            <legend>Orari</legend>
             
 
+            <!-- Tabela -->
+            <table border="1px">
+               <tr>
+                  <th></th>
+                  <th>9:00 - 10:30</th>
+                  <th>10:40 - 12:10</th>
+                  <th>12:20 - 13:50</th>
+                  <th>14:00 - 15:30</th>
+                  <th>15:40 - 17:10</th>
+               </tr>
+               <tr>
+                  <th>E Hene</th>
+                  <td colspan="2" style="text-align: center;">Inxhinieri e uebit</td>
+                  <td></td>
+                  <td colspan="2" style="text-align: center;">Labcourse</td>
+               </tr>
+               <tr>
+                  <th>E Marte</th>
+                  <td colspan="5" rowspan="2" style="text-align: center;">Pushim</td>
+               </tr>
+               <tr>
+                  <th>E Merkure</th>
+               </tr>
+               <tr>
+                  <th>E Enjte</th>
+                  <td>Struktura Diskrete</td>
+                  <td>Sisteme Operative</td>
+                  <td>Algoritme</td>
+                  <td colspan="2" style="text-align: center;">Boll per sot</td>
+               </tr>
+            </table>
+            
+            <br/>
 
+               <!-- Lendet -->
+            <fieldset style="border: 1px solid black;">
+               <legend>Lendet</legend>
+
+               <ul>
+                  <li>Inxhinieri e uebit</li>
+                  <ul>
+                     <li>HTML</li>
+                     <li>CSS</li>
+                     <ul>
+                        <li>Inline</li>
+                        <li>Internal</li>
+                        <li>External</li>
+                     </ul>
+                     <li>JS</li>
+                     <li>PHP</li>
+                        <ol type="i">
+                           <li>OOP</li>
+                           <li>Procedural</li>
+                        </ol>
+                  </ul>
+               </ul>
+            </fieldset>
+         </fieldset>
+               
          </main>
-         <footer>
-            <h6>2020 - UBT SHKI - <a href="https://github.com/HysenB/Java2Web" target="_blank">Reference</a></h6>
+
+         <!-- Footer -->
+         <footer style="text-align: center;">
+            <h6>© 2020 - UBT SHKI - <a href="https://github.com/BerishaHysen/Java2Web" target="_blank">Reference</a></h6>
          </footer>
          
    </body>
